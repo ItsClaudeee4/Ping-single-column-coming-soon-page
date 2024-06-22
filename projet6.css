@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Franklin", sans-serif;
+}
+body{
+    background-color: white;
+    height: 100vh;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+    text-align: center;
+    margin: 60px 0 60px 0;
+}
+section{
+    max-width: 700px;
+}
+header img{
+width: 80px;
+margin-bottom: 30px;
+}
+h1{
+    color:hsl(0, 0%, 59%) ;
+    font-weight: 400;
+    font-size: 40px;
+}
+header span{
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+    font-size: 40px;
+}
+header{
+    margin-bottom: 30px;
+}
+form{
+margin-bottom: 80px;
+display: grid;
+grid-template-columns: 2.7fr 1.3fr;
+column-gap: 15px;
+position: relative;
+}
+form input:first-child{
+    border: solid 1px hsl(223, 100%, 88%);
+    padding: 15px 0 15px 20px;
+}
+::-webkit-input-placeholder{
+    color: hsl(223, 100%, 88%);
+}
+form input:last-child{
+background-color: hsl(223, 87%, 63%) ;
+border: none;
+color: white;
+box-shadow: 0 2px 10px rgba(0, 0, 255, 0.619);
+cursor: pointer;
+}
+form input:last-child:hover{
+    opacity: 0.7;
+}
+.error{
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    font-size: 10px;
+    font-style: italic;
+    color:  hsl(354, 100%, 66%);
+    font-weight: 600;
+}
+input{
+    padding: 15px;
+    border-radius: 30px;
+}
+
+main img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.links{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.link{
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border:solid 1px   hsl(223, 100%, 88%);
+    border-radius: 50%;
+    color:hsl(223, 87%, 63%) ;
+    cursor: pointer;
+
+}
+.link:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+main p{
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+}
+main{
+    margin-bottom: 50px;
+}
+.hidden{
+    display: none;
+}
+@media (max-width:600px){
+    section{
+        padding: 40px;
+    }
+    header img{
+        width: 60px;
+    }
+    header h1{
+        font-size: 26px;
+    }
+    header span{
+        font-size: 26px;
+    }
+    header p{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .input{
+        padding: 12px;
+    }
+    form input:first-child{
+        padding: 12px 0 12px 20px;
+    }
+    .error{
+        position:static;
+        margin-bottom: 20px;
+    }
+}
